@@ -22,8 +22,8 @@
 	</head>
 
 	<body>
-		<div class="container-fluid" style="background-color: #fba292;">
-			<div class="row" id="nav" style="margin-top:3px;margin-bottom:3px;">
+		<div class="container-fluid" id="nav" style="background-color: #fba292; margin-top:3px;margin-bottom:3px;">
+			<div class="row" >
 				<div class="col-3">
 					<li><a href="#">Top</a></li>
 				</div>
@@ -223,6 +223,23 @@
 		</div>
 		<div style="height: 100px;background-color: #fba292;">
 		</div>
+
+		<script language="javascript" type="text/javascript">
+			function switchByWidth() {
+			if (window.matchMedia("(max-width: 767px)").matches) {
+					//スマホ処理
+					document.getElementById('nav').innerHTML = '<div class="row"></div>';
+				} else if (window.matchMedia("(min-width:768px)").matches) {
+					document.getElementById('nav').innerHTML = '<div class="row"><div class="col-3">\
+					<li><a href="#">Top</a></li></div><div class="col-3"><li><a href="#skill">Skill</a>\
+					</li></div><div class="col-3"><li><a href="#product">Product</a></li></div>\
+					<div class="col-3"><li><a href="#contact">Contact</a></li></div></div>';
+				}
+			}
+			window.onload = switchByWidth;
+			window.onresize = switchByWidth;
+		</script>
+
  
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->

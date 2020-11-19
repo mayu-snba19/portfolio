@@ -21,10 +21,6 @@
 }
 
 body {
-	/* font-family: "Open Sans", "Helvetica Neue", "Arial", "游ゴ
-シック",
-		"ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo,
-		sans-serif; */
 	letter-spacing: 0.2em;
 }
 
@@ -104,44 +100,6 @@ ol li {
 .star5_rating[data-rate="0"]:after {
 	width: 0%;
 } /* 星0 */
-
-/* .btn-primary {
-	background: #fba292;
-	color: #ffffff;
-	border-color: #fba292;
-}
-.btn-primary.outline {
-	border: 3px solid #fba292;
-	color: #ffffff;
-}
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary:active:focus,
-.btn-primary:active:hover,
-.btn-primary:active.focus,
-.btn-primary.active,
-.btn-primary.active:focus,
-.btn-primary.active:hover,
-.btn-primary.active.focus,
-.open > .dropdown-toggle.btn-primary,
-.open > .dropdown-toggle.btn-primary:hover,
-.open > .dropdown-toggle.btn-primary:focus,
-.open > .dropdown-toggle.btn-primary.focus,
-.btn-primary.disabled:hover,
-.btn-primary[disabled]:hover,
-fieldset[disabled] .btn-primary:hover,
-.btn-primary.disabled:focus,
-.btn-primary[disabled]:focus,
-fieldset[disabled] .btn-primary:focus,
-.btn-primary.disabled.focus,
-.btn-primary[disabled].focus,
-fieldset[disabled] .btn-primary.focus {
-	background: #fba292;
-	color: #ffffff;
-	border-color: #fba292;
-} */
 
 /* 通常のボタン色 */
 .btn-pink,

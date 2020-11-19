@@ -1,0 +1,181 @@
+#nav {
+	list-style: none;
+	display: flex;
+	background-color: #fba292;
+}
+
+#nav li {
+	/* width: 140px; */
+	text-align: center;
+	background-color: #fba292;
+	height: 50px;
+	line-height: 50px;
+	/* margin-right: 2px; */
+}
+
+#nav li a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	padding: 20px;
+}
+
+body {
+	/* font-family: "Open Sans", "Helvetica Neue", "Arial", "游ゴ
+シック",
+		"ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo,
+		sans-serif; */
+	letter-spacing: 0.2em;
+}
+
+ul,
+ol {
+	padding: 0;
+	position: relative;
+}
+
+.container ul li,
+ol li {
+	color: black;
+	border-left: solid 8px #fba292; /*左側の線*/
+	background: whitesmoke; /*背景色*/
+	margin-bottom: 5px; /*下のバーとの余白*/
+	line-height: 1.5;
+	border-radius: 0 15px 15px 0; /*右側の角だけ丸く*/
+	padding: 0.5em;
+	list-style-type: none !important;
+	margin-bottom: 20px;
+}
+
+.star5_rating {
+	position: relative;
+	z-index: 0;
+	display: inline-block;
+	white-space: nowrap;
+	color: #cccccc; /* グレーカラー 自由に設定化 */
+	/*font-size: 30px; フォントサイズ 自由に設定化 */
+}
+
+.star5_rating:before,
+.star5_rating:after {
+	content: "★★★★★";
+}
+
+.star5_rating:after {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	color: #ffcf32; /* イエローカラー 自由に設定化 */
+}
+
+.star5_rating[data-rate="5"]:after {
+	width: 100%;
+} /* 星5 */
+.star5_rating[data-rate="4.5"]:after {
+	width: 90%;
+} /* 星4.5 */
+.star5_rating[data-rate="4"]:after {
+	width: 80%;
+} /* 星4 */
+.star5_rating[data-rate="3.5"]:after {
+	width: 70%;
+} /* 星3.5 */
+.star5_rating[data-rate="3"]:after {
+	width: 60%;
+} /* 星3 */
+.star5_rating[data-rate="2.5"]:after {
+	width: 50%;
+} /* 星2.5 */
+.star5_rating[data-rate="2"]:after {
+	width: 40%;
+} /* 星2 */
+.star5_rating[data-rate="1.5"]:after {
+	width: 30%;
+} /* 星1.5 */
+.star5_rating[data-rate="1"]:after {
+	width: 20%;
+} /* 星1 */
+.star5_rating[data-rate="0.5"]:after {
+	width: 10%;
+} /* 星0.5 */
+.star5_rating[data-rate="0"]:after {
+	width: 0%;
+} /* 星0 */
+
+/* .btn-primary {
+	background: #fba292;
+	color: #ffffff;
+	border-color: #fba292;
+}
+.btn-primary.outline {
+	border: 3px solid #fba292;
+	color: #ffffff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.btn-primary:active.focus,
+.btn-primary.active,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary,
+.open > .dropdown-toggle.btn-primary:hover,
+.open > .dropdown-toggle.btn-primary:focus,
+.open > .dropdown-toggle.btn-primary.focus,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus {
+	background: #fba292;
+	color: #ffffff;
+	border-color: #fba292;
+} */
+
+/* 通常のボタン色 */
+.btn-pink,
+.btn-pink.disabled,
+.btn-pink:disabled {
+	color: #fff;
+	background-color: #fba292;
+	border-color: #fba292;
+}
+
+/* focusされた時の枠線の色 */
+.btn-pink:focus,
+.btn-pink.focus,
+.btn-pink:not(:disabled):not(.disabled):active:focus,
+.btn-pink:not(:disabled):not(.disabled).active:focus,
+.show > .btn-pink.dropdown-toggle:focus {
+	box-shadow: 0 0 0 0.2rem rgba(251, 162, 146, 0.5);
+}
+
+/* hover時（マウスカーソルを重ねた時）の色（通常より濃いor暗めの色を指定） */
+.btn-pink:hover {
+	color: #fff;
+	background-color: #fda592;
+	border-color: #fda592;
+}
+
+/* active時の色（hover時と同等かさらに濃いor暗めの色を指定） */
+.btn-pink:not(:disabled):not(.disabled):active,
+.btn-pink:not(:disabled):not(.disabled).active,
+.show > .btn-pink.dropdown-toggle {
+	color: #fff;
+	background-color: #ffa896;
+	border-color: #ffa896;
+}
+span {
+	color: crimson;
+}
